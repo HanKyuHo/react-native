@@ -1,4 +1,4 @@
-package com.lol_calculator;
+package com.khanbro.lol_calculator;
 
 import com.facebook.react.ReactActivity;
 

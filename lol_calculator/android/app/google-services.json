@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "171289164746",
+    "firebase_url": "https://react-native-e35cb.firebaseio.com",
+    "project_id": "react-native-e35cb",
+    "storage_bucket": "react-native-e35cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171289164746:android:840655e9eed0e3f6bd6d33",
+        "android_client_info": {
+          "package_name": "com.khanbro.lol_calculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171289164746-e0ppb1ske0m067go4l2av4i6j5cofg1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD04m9JnOR7bByBcGwCzYN1OJm7X4JYQwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171289164746-e0ppb1ske0m067go4l2av4i6j5cofg1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
