@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
     SafeAreaView,
     StyleSheet,
@@ -15,6 +15,8 @@ import {
     Text,
     StatusBar,
     Button,
+    Image,
+    Dimensions,
 } from 'react-native';
 import admob, {
     InterstitialAd,
