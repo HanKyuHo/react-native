@@ -79,6 +79,7 @@ function App() {
     useEffect(() => {
        var obj = [];
        var key = Object.keys(champData);
+       key.sort();
 
        for(var i = 0, len = key.length; i<len; i++){
            obj.push(
