@@ -18,12 +18,12 @@ function HomeScreen({navigation}) {
 
     return (
         <ScrollView style={{flex: 1}}>
-            <View style={{height:30}}>
+            <TouchableOpacity style={{height:30}} onPress={() => navigation.navigate('Rooms', { name : 1})}>
                 <Text>1번 방</Text>
-            </View>
-            <View style={{height:30}}>
+            </TouchableOpacity>
+            <TouchableOpacity style={{height:30}} onPress={() => navigation.navigate('Rooms', { name : 2})}>
                 <Text>2번 방</Text>
-            </View>
+            </TouchableOpacity>
         </ScrollView>
     )
 }
