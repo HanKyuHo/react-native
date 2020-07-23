@@ -26,7 +26,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 
 import HomeScreen from './src/screen/homeScreen';
-import ChampScreen from './src/screen/champScreen';
+import LoginScreen from './src/screen/loginScreen';
 
 import AdmobBanner from './src/admob/admobBanner';
 import AdmobInterstitial from './src/admob/admobInterstitial';
@@ -34,9 +34,9 @@ import AdmobRewarded from './src/admob/admobRewarded';
 
 const Stack = createStackNavigator();
 
-function App() {
+function App({ navigation }) {
     const [admobLoading, setAdmobLoading] = useState(false);
-    let screenOption = initScreenOption();
+    let screenOption = initScreenOption(navigation);
 
     initAdmob(setAdmobLoading);
 
@@ -44,8 +44,8 @@ function App() {
         <SafeAreaView style={{flex: 1}}>
             <NavigationContainer>
                 <Stack.Navigator>
+                    <Stack.Screen name="Login" options={screenOption.loginOption} component={LoginScreen}/>
                     <Stack.Screen name="Home" options={screenOption.homeOption} component={HomeScreen}/>
-                    <Stack.Screen name="Champ" options={screenOption.champOption} component={ChampScreen}/>
                 </Stack.Navigator>
             </NavigationContainer>
             {admobLoading && <AdmobBanner/>}
@@ -72,6 +72,8 @@ function initScreenOption() {
     let obj = {
         homeOption : {
             title: '메인',
+            headerLeft: null,
+
             headerStyle: {
                 backgroundColor: '#f4511e'
             },
@@ -80,8 +82,8 @@ function initScreenOption() {
                 fontWeight: 'bold'
             }
         },
-        champOption : {
-            title: '챔피언 선택창',
+        loginOption : {
+            title: '로그인',
             headerStyle: {
                 backgroundColor: '#6c66f4'
             },
@@ -89,7 +91,8 @@ function initScreenOption() {
             headerTitleStyle: {
                 fontWeight: 'bold'
             }
-        }
+        },
+
     };
 
     return obj;

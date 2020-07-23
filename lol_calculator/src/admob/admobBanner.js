@@ -11,7 +11,7 @@ function AdmobBanner() {
     const bannerId4 = 'ca-app-pub-3168108779906402/7716538101';
 
     return(
-        <BannerAd unitId={bannerId3} size={BannerAdSize.SMART_BANNER}
+        <BannerAd unitId={bannerId2} size={BannerAdSize.SMART_BANNER}
                   requestOptions={{requestNonPersonalizedAdsOnly: true}}/>
     );
 }
