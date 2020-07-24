@@ -74,14 +74,14 @@ function tabNavi() {
             <Tab.Screen name="로그인" component={loginNavi} options={{
                 tabBarIcon: ({focused}) => {
                     return (
-                        <Icon name="user" color="#4F8EF7" size={24}/>
+                        <Icon name="person" color="#6c66f4" size={24}/>
                     )
                 }
             }}/>
             <Tab.Screen name="회원가입" component={signNavi} options={{
                 tabBarIcon: ({focused}) => {
                     return (
-                        <Icon name="adduser" color="#4F8EF7" size={24}/>
+                        <Icon name="person-add" color="#1da356" size={24}/>
                     )
                 }
             }}/>
@@ -105,10 +105,10 @@ function App() {
 
     return (
         <SafeAreaView style={{flex: 1}}>
+            {admobLoading && <AdmobBanner/>}
             <NavigationContainer>
                 <DrawNavi/>
             </NavigationContainer>
-            {admobLoading && <AdmobBanner/>}
         </SafeAreaView>
     );
 };

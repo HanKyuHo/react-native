@@ -14,7 +14,7 @@ function signScreen({navigation}) {
     }, []);
 
     return (
-        <View style={{flexDirection: 'column', marginLeft: '25%', marginTop: '40%'}}>
+        <View style={{flexDirection: 'column', marginLeft: '25%', marginTop: '10%'}}>
             <TextInput style={{width: 200, height: 40, borderColor: 'gray', borderWidth: 1, borderRadius: 5}}/>
             <TextInput style={{width: 200, height: 40, borderColor: 'gray', borderWidth: 1, borderRadius: 5, marginTop : 10}}/>
             <TouchableOpacity style={{
