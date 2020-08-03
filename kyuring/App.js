@@ -21,6 +21,7 @@ const App = () => {
     <SafeAreaView>
         <View>
           <Text>규호야 알아서 다해 이제</Text>
+          <Text>시러~~~~~</Text>
         </View>
     </SafeAreaView>
   );
