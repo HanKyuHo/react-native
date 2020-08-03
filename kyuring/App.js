@@ -20,8 +20,8 @@ const App = () => {
   return (
     <SafeAreaView>
         <View>
-          <Text>규호야 알아서 다해 이제</Text>
-          <Text>시러~~~~~</Text>
+          <Text>졍아 뭐해?</Text>
+          <Text>시러~~~~</Text>
         </View>
     </SafeAreaView>
   );
