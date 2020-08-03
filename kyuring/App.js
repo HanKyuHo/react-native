@@ -19,7 +19,9 @@ import {
 const App = () => {
   return (
     <SafeAreaView>
-
+        <View>
+          <Text>졍이져아</Text>
+        </View>
     </SafeAreaView>
   );
 };
