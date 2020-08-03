@@ -20,7 +20,7 @@ const App = () => {
   return (
     <SafeAreaView>
         <View>
-          <Text>규호야 알아서 다해 이제</Text>
+          <Text>규호는거짓말쟁이야</Text>
           <Text>시러~~~~~</Text>
         </View>
     </SafeAreaView>
